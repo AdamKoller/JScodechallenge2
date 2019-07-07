@@ -13,4 +13,31 @@
     <p>3) return who has the highest BMI in form: '(full name) has
     the highest BMI of (BMI)</p>
   </body>
+  
+  <script>
+    var mark = {
+      firstName: 'Mark',
+      lastName: 'Washington',
+      mass: 86,
+      height: 1.828,
+      markBmi: function(mass,height) {
+        return this.mass/(this.height**2);
+      }
+    };
+    document.write(mark.markBmi());
+
+    document.write('-----------');
+
+
+    var john = {
+      firstName: 'John',
+      lastName: 'Jefferson',
+      mass: 74,
+      height: 1.745,
+      johnBmi: function(mass,height) {
+        return this.mass/(this.height**2);
+      }
+    };
+    document.write(john.johnBmi());
+  </script>
 </html>
