@@ -40,5 +40,14 @@
     document.write(mark.markBmi());
       document.write('-----------');
     document.write(john.johnBmi());
+      document.write('-----------');
+
+    if (mark.markBmi() > john.johnBmi()) {
+      document.write(mark.firstName + ' ' + mark.lastName + ' has the highest BMI of ' + mark.bmi);
+    } else if (john.johnBmi > mark.markBmi) {
+      document.write(john.firstName + ' ' + john.lastName + ' has the highest BMI of ' + john.bmi);
+    } else {
+      document.write('Their BMI is the same!');
+    }
   </script>
 </html>
